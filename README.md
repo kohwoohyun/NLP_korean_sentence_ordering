@@ -26,7 +26,7 @@ DACON '문맥 기반 문장 순서 예측 AI 경진대회'
 파인튜닝 없이 사전학습 모델의 Perplexity를 활용했습니다.
 4개 문장의 24가지 순열 중 PPL이 가장 낮은 순서를
 정답으로 예측합니다.
-각 모델별 PPL 성능을 비교해 
+각 모델별 PPL 성능을 비교했습니다.
 
 코드는 [Stage1](./Stage1)을 통해 확인할 수 있습니다.
 
@@ -118,3 +118,32 @@ PPL 베이스라인과 파인튜닝 후 순위가 역전되는
 
 프롬프트 형식 수정과 학습/평가 방식 통일로
 해결했습니다.
+
+## 한계 및 개선 방향
+
+### 한계
+- 순열 기반 증강으로 데이터 다양성 부족
+- QDoRA와 같은 다른 파인튜닝 방식 미적용으로 다양성 부족
+- LLM이 아닌 BERT 기법 미적용
+
+### 향후 개선 방향
+
+LLM 기반 데이터 증강 적용해
+Qwen3-14B로 원본과 유사한 새로운 문장 생성
+
+QDoRA 적용으로
+QLoRA 대비 추가 성능 향상 기대
+
+BERT 기반 접근법 구현으로
+LLM vs BERT 성능 비교
+
+## 환경 설정
+
+### 필요 패키지
+pip install transformers peft bitsandbytes
+pip install accelerate datasets scikit-learn
+pip install torch pandas tqdm
+
+## 참고 자료
+
+- [문맥 기반 문장 순서 예측 AI 경진대회](https://dacon.io/competitions/official/236489/overview/description)
