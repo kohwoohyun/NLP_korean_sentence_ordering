@@ -140,9 +140,11 @@ LLM vs BERT 성능 비교
 ## 환경 설정
 
 ### 필요 패키지
+```python
 pip install transformers peft bitsandbytes
 pip install accelerate datasets scikit-learn
 pip install torch pandas tqdm
+```
 
 ## 참고 자료
 
