@@ -20,8 +20,8 @@ MODEL_NAME    = "Qwen/Qwen3-14B"
 
 # 학습 하이퍼파라미터 (14B 모델에 맞춰 조정)
 NUM_EPOCHS    = 3
-BATCH_SIZE    = 8       # 메모리 확보를 위해 4로 조정
-GRAD_ACCUM    = 2       # 실질 배치 사이즈 = 4 * 4 = 16
+BATCH_SIZE    = 8      
+GRAD_ACCUM    = 2      
 LEARNING_RATE = 5e-5    # Kanana-v2에서 성공한 학습률
 MAX_LENGTH    = 256
 VAL_RATIO     = 0.2
