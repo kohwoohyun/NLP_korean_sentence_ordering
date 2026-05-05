@@ -1,0 +1,16 @@
+model,separator,accuracy
+skt/kogpt2-base-v2,' ',0.0315603319276288
+kakaocorp/kanana-nano-2.1b-base,'\n',0.703169636784111
+kakaocorp/kanana-nano-2.1b-base,'. ',0.72888042443205
+kakaocorp/kanana-nano-2.1b-base,' ',0.7627533668888586
+EleutherAI/polyglot-ko-3.8b,' ',0.3866140661134539
+Qwen/Qwen3-4B,' ',0.4551761665079581
+Qwen/Qwen3-14B,' ',0.6603183240375459
+kakaocorp/kanana-nano-2.1b-base-QLoRA,' ',0.7144799456152278
+kakaocorp/kanana-nano-2.1b-base-QLoRA-prompt,' ',0.0455472467709041
+kakaocorp/kanana-nano-2.1b-base-QLoRA-prompt,' ',0.0557443915703603
+kakaocorp/kanana-nano-2.1b-base-QLoRA-ckpt1000-PPL,' ',0.6546566961250849
+kakaocorp/kanana-nano-2.1b-base-QLoRA-v2-PPL,' ',0.7845003399048266
+Qwen/Qwen3-14B-QLoRA-v2-Gen,' ',0.8545207341944255
+klue/roberta-large-Regression,[SEP],0.0523453433038749
+klue/roberta-large-Regression-Margin,[SEP],0.8626784500339905
